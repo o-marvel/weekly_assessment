@@ -1,9 +1,17 @@
 import usingpackage.Mammal
 
 fun main(args: Array<String>) {
-// var human = Mammal("black", 4, "land")
-//    println(human.habitat)
+//////////
+        fuzzBuzzGame ()
+//////////
+       strReverserGame()
 
+
+
+
+
+} // main loop ends here
+fun fuzzBuzzGame (){
     var scores = 1..100
 
     for (x in scores) {
@@ -16,11 +24,30 @@ fun main(args: Array<String>) {
             println(" $x : fuzz buzz")
         }
     }
+}
+fun strReverserGame(){
+      var names :String = "Marvelous"
+    println(names.indices)
+    var l = names.length-1
+    println(l)
+    for (index in names.indices){
+        print((names[l - index]).toString())
+    }
+}
 
-   // this will reverse the string
-    var fullName : String = " good food"
-      var r = fullName.reversed()
-    println(r)
 
-} // main loop ends here
+//fun anyStringReverserGame() {
+//    println("please enter a string to start this game .... ")
+//    var names = readLine()
+//    if (names is String) {
+//        println(names.indices)
+//        var l = names.length - 1
+//        println(l)
+//        for (index in names.indices) {
+//            print((names[l - index]).toString())
+//        }
+//    } else {
+//        println("$names is not a valid string")
+//    }
+//}
 
